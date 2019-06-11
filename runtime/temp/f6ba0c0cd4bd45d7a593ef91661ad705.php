@@ -1,0 +1,834 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:41:"./template/pc/yingdongli/index\index.html";i:1560200599;s:59:"F:\fositebianping\template\pc\yingdongli\public\header.html";i:1560195647;s:64:"F:\fositebianping\template\pc\yingdongli\public\product-box.html";i:1559819527;s:59:"F:\fositebianping\template\pc\yingdongli\public\footer.html";i:1559701309;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页-硬动力官网|硬动力官网</title>
+    <meta name="keywords" content="硬动力官网是变频行业权威官网"/>
+    <meta name="description" content="硬动力官网是变频行业权威官网"/>
+    <link rel="stylesheet" type="text/css" href="/template/pc/yingdongli/static/css/fontInco/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/template/pc/yingdongli/static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/template/pc/yingdongli/static/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/template/pc/yingdongli/static/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/template/pc/yingdongli/static/css/about.css"/>
+    <script src="/template/pc/yingdongli/static/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/public/js/global.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/public/upload/logo/2019/05-22/b23e888e0210bffc194d4f8b4ad42e20.png" media="screen"/>
+</head>
+<body>
+<!--header-s-->
+<div class="top-box minwidth">
+    <div class="wrap">
+        <div class="welcome">欢迎来到硬动力官网！查看分站<i class="fa fa-angle-down"></i></div>
+        <div class="tel"><i class="fa fa-volume-control-phone"></i><span>0755-88889999</span></div>
+    </div>
+</div>
+<div class="header-box minwidth">
+    <div class="wrap">
+        <div class="logo">
+            <a href="/index.php/Home/index/index.html">
+                <img src="/template/pc/yingdongli/static/imgs/logo/logo.png"/>
+            </a>
+        </div>
+        <div class="slogn">中国变频器领先品牌<br>www.fositebianping.com</div>
+        <div class="search-box">
+            <div class="search-input">
+                <form id="searchForm" name="" method="get" action="/index.php/Home/Goods/search.html" class="ecsc-search-form">
+                    <input value="" autocomplete="off" name="q" id="q" type="text" placeholder="输入关键字">
+                    <button type="submit">搜索</button>
+                </form>
+            </div>
+            <div class="keyword" id="search_list">
+                <a href="/index.php/Home/Goods/search/q/%E5%8F%98%E9%A2%91%E5%99%A8.html" target="_blank">变频器</a>
+                <a href="/index.php/Home/Goods/search/q/%E5%8F%98%E9%A2%91%E6%9F%9C.html" target="_blank">变频柜</a>
+                <a href="/index.php/Home/Goods/search/q/%E6%B0%B4%E6%B3%B5%E5%8F%98%E9%A2%91%E6%9F%9C.html" target="_blank">水泵变频柜</a>
+                <a href="/index.php/Home/Goods/search/q/%E5%8C%85%E8%A3%85%E5%8F%98%E9%A2%91%E6%9F%9C.html" target="_blank">包装变频柜</a>
+                <a href="/index.php/Home/Goods/search/q/%E6%9C%BA%E5%BA%8A%E5%8F%98%E9%A2%91%E6%9F%9C.html" target="_blank">机床变频柜</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav-box minwidth">
+    <div class="wrap">
+        <span class="on"><a href="/index.php/home/Index/index.html">首页</a></span>
+        <span >
+            <a href="#" target="_blank"  >变频器</a>
+        </span>
+        <span >
+            <a href="#" target="_blank"  >变频柜</a>
+        </span>
+        <span >
+            <a href="/home/product/index" target="_blank"  >产品中心</a>
+        </span>
+        <span >
+            <a href="#" target="_blank"  >定制/维修/加盟</a>
+        </span>
+        <span >
+            <a href="/home/news/index" target="_blank"  >新闻百科</a>
+        </span>
+        <span >
+            <a href="#" target="_blank"  >客户案例</a>
+        </span>
+        <span >
+            <a href="#" target="_blank"  >在线购买 </a>
+        </span>
+        <span >
+            <a href="#" target="_blank"  >关于我们</a>
+        </span>
+    </div>
+</div>
+<!--header-e-->
+<!--header-e-->
+
+<!--banner-s-->
+<div id="myCarousel" class="carousel clearfix ">
+    <ul class="carousel-inner wrap">
+        <li class="item" style="background:#ffffff;">
+            <a class="item-pic" href="javascript:void(0);">
+            <img class="w-100" src="/template/pc/yingdongli/static/imgs/ad/ad1.jpg" title="" alt=""></a>
+        </li>
+        <li class="item" style="background:#ffffff;">
+            <a class="item-pic" href="javascript:void(0);">
+            <img class="w-100" src="/template/pc/yingdongli/static/imgs/ad/ad2.jpg" title="" alt=""></a>
+        </li>
+        <li class="item" style="background:#ffffff;">
+            <a class="item-pic" href="javascript:void(0);">
+            <img class="w-100" src="/template/pc/yingdongli/static/imgs/ad/ad3.jpg" title="" alt=""></a>
+        </li>
+    </ul>
+    <div class="pagination" >
+        
+    </div>
+    <a class="carousel-control left-btn t-all" href="javascript:;" data-slide="prev"></a>
+    <a class="carousel-control right-btn t-all" href="javascript:;" data-slide="next"></a>
+    
+    <div class="banner-right-box">
+            <a class="banner-right-item t-all" href="javascript:void(0);"><img src="/template/pc/yingdongli/static/imgs/ad/ad1.jpg" alt=""/></a>
+            <a class="banner-right-item t-all" href="javascript:void(0);"><img src="/template/pc/yingdongli/static/imgs/ad/ad3.jpg" alt=""/></a>
+    </div>
+    <script>
+        // $(function () {
+        $(document).ready(function(){
+
+            function banner() {
+                var windowWidth = $(window).width();  //获取轮播图的宽度（这里是全屏）
+                window.onresize = function () {  //屏幕大小改变时 自适应
+                    windowWidth = $(window).width();
+                    $_banner.css({'width': windowWidth * (length + 2), left: -windowWidth});
+                    $_banner.find('.item').css('width', windowWidth);
+                };
+                console.log('windowWidth:'+windowWidth);
+                var $_bannerWrap = $('#myCarousel');
+                var $_banner = $_bannerWrap.find('.carousel-inner');
+                var length = $_banner.find('.item').length;
+                var first = $_banner.find('.item').eq(0).clone();
+                var last = $_banner.find('.item:last').clone();
+                var timer; //定时器
+                $_banner.append(first);
+                $_banner.prepend(last);
+                //初始化 轮播图列表宽度和列表项宽度
+                $_banner.css({'width': windowWidth * (length + 2), left: -windowWidth});
+                $_banner.find('.item').css('width', windowWidth);
+
+                var $_pagination = $_bannerWrap.find('.pagination');
+                for (var i = 0; i < length; i++) {  //自动增加白色索引点击点
+                    $_pagination.append('<span class="pagination-item"></span>');
+                }
+                var iNow = 1; //索引记录标志
+                hoverActive(iNow); //初始化状态标记
+                $_bannerWrap.find('.left-btn').click(function () {
+                    clearInterval(timer);
+                    iNow--;
+                    bannerRun();
+                });
+                $_bannerWrap.find('.right-btn').click(function () {
+                    clearInterval(timer);
+                    iNow++;
+                    bannerRun();
+                });
+                $_pagination.find('.pagination-item').click(function () {
+                    iNow = $(this).index() + 1;
+                    $_banner.finish().animate({left: -iNow * windowWidth}, 500);
+                    hoverActive(iNow);
+                });
+
+                function bannerAutoRun() {  //轮播图自动循环播放 间隔4秒
+                    timer = setInterval(function () {
+                        iNow++;
+                        bannerRun();
+                    }, 4000)
+                }
+
+                bannerAutoRun();
+
+                //移动上面去停止，移动出来继续轮播
+                function hoverChangeRun(ele) {
+                    ele.hover(function () {
+                        clearInterval(timer);
+                    }, function () {
+                        bannerAutoRun();
+                    });
+                }
+
+                hoverChangeRun($_banner.find('.item-pic'));
+                hoverChangeRun($_pagination.find('.pagination-item'));
+                hoverChangeRun($_bannerWrap.find('.carousel-control'));
+
+                function hoverActive(index) { //切换时改变状态
+                    $_banner.find('.item').eq(index).addClass('slide-active').siblings().removeClass('slide-active');
+                    $_pagination.find('.pagination-item').eq(index - 1).addClass('active').siblings().removeClass('active');
+                }
+
+                function bannerRun() { //点击切换图片
+                    if (iNow > length) {
+                        $_banner.finish().animate({left: -iNow * windowWidth}, 300, function () {
+                            $_banner.css({left: -1 * windowWidth});
+                        });
+                        iNow = 1;
+                    } else if (iNow < 1) {
+                        $_banner.finish().animate({left: -iNow * windowWidth}, 500, function () {
+                            $_banner.css({left: -length * windowWidth});
+                        });
+                        iNow = length;
+                    } else {
+                        $_banner.finish().animate({left: -iNow * windowWidth}, 300);
+                    }
+                    hoverActive(iNow);
+                }
+            }
+
+            banner();
+        })
+    </script>
+</div>
+<!--banner-e-->
+<!--bz-s-->
+<div class="bz_box ">
+    <div class="wrap pc">
+        <div class="inco_box inco_1">厂家直销</div>
+        <div class="inco_box inco_2">正品保障</div>
+        <div class="inco_box inco_3">快速发货</div>
+        <div class="inco_box inco_4">产品中心</div>
+    </div>
+    <div class="bz-mobile wrap clearfix">
+        <div class="box-inc">
+            <div class="box icon1"><img src="/template/pc/yingdongli/static/imgs/icon/phone_icon_1.png" style="width: 28px ; height: 28px;" alt=""></div>
+            <p>变频器</p>
+        </div>
+        <div class="box-inc">
+            <div class="box icon2"><img src="/template/pc/yingdongli/static/imgs/icon/phone_icon_2.png" style="width: 28px ; height: 28px;" alt=""></div>
+            <p>变频柜</p>
+        </div>
+        <div class="box-inc">
+            <div class="box icon3"><img src="/template/pc/yingdongli/static/imgs/icon/phone_icon_3.png" style="width: 28px ; height: 28px;" alt=""></div>
+            <p>产品百科</p>
+        </div>
+        <div class="box-inc">
+            <div class="box icon4"><img src="/template/pc/yingdongli/static/imgs/icon/phone_icon_4.png" style="width: 28px ; height: 28px;" alt=""></div>
+            <p>产品中心</p>
+        </div>
+       
+    </div>
+</div>
+<!--bz-e-->
+<!--product-s-->
+<div class="wrap">
+    <div class="product clearfix">
+        <div class="left fl">
+
+            <!-- <div class="product-box">
+                <div class="title"><i class="fa fa-list-ul"></i><span>产品导航</span></div>
+                <ul>
+                    <li><i class="fa fa-caret-down"></i> 变频器</li>
+                    <dt>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                        <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    </dt>
+                    <li><i class="fa fa-caret-right"></i> 变频器</li>
+                    <li><i class="fa fa-caret-right"></i> 变频器</li>
+                    <li><i class="fa fa-caret-right"></i> 变频器</li>
+                </ul>
+                <div class="more"><a href="">查看更多 > ></a> </div>
+            </div> -->
+            <!--产品导航 s-->
+            <div class="product-box" id="product-box">
+    <div class="title">产品导航</div>
+    <ul>
+        <?php if(is_array($cat_list) || $cat_list instanceof \think\Collection || $cat_list instanceof \think\Paginator): if( count($cat_list)==0 ) : echo "" ;else: foreach($cat_list as $k=>$vo): if($vo['parent_id'] == 0): ?>
+                <li><i class="fa fa-caret-right"></i> <?php echo $vo['name']; ?></li>
+                <?php else: continue; endif; ?>
+            <dt>
+                <?php if(is_array($cat_list) || $cat_list instanceof \think\Collection || $cat_list instanceof \think\Paginator): if( count($cat_list)==0 ) : echo "" ;else: foreach($cat_list as $k1=>$vo1): if($vo['id'] == $vo1['parent_id']): ?>
+                        <dl data-id="<?php echo $vo1['id']; ?>"><a href="<?php echo U('home/Product/index', ['cat_id'=>$vo1['id']]); ?>" ><i class="fa fa-caret-right"></i><?php echo $vo1['name']; ?></a></dl>
+                        <?php else: continue; endif; endforeach; endif; else: echo "" ;endif; ?>
+            </dt>
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+
+    </ul>
+    <div class="more"><a href="">查看更多 > ></a> </div>
+</div>
+
+<script>
+    //产品导航的切换
+    $(function(){
+        // $('#product-box ul li:first-child i').attr('class', 'fa fa-caret-down');
+        // $('#product-box ul li:first-child').next().css({"display":"block" , "color":"blue"});
+        // $('#product-box ul li:first-child').next().children('dl').children('a').children('i').attr('class', 'fa fa-caret-down');
+        $('#product-box ul li').click(function(){
+            $('#product-box ul li i').attr('class', 'fa fa-caret-right');
+            $('#product-box ul li').next().css('display', 'none');
+            var n = $(this).index();
+            console.log(n);
+            console.log( $('#product-box ul li:nth-child(n) i'));
+            $(this).children('i').attr('class', 'fa fa-caret-down');
+            $(this).next().css({"display":"block" , "color":"blue"});
+            $(this).next().children('i').attr('class', 'fa fa-caret-down');
+        });
+    })
+</script>
+<script>
+    $(document).ready(function(){
+        var oBannerTop = $('#myCarousel').offset().top;
+        var h = $(window).scrollTop();
+        $(window).scroll(function(){
+            sTop = $(this).scrollTop();
+            sWithd = $(this).width();
+            // console.log('width'+sWithd);
+            // console.log(sTop);
+            // console.log(oBannerTop);
+            if(sWithd <= 420){
+                if(sTop >= oBannerTop){
+                    $("#header-box").css({"position":"fixed","top":"0"});
+                }else{
+                    $("#header-box").css({"position":"static"});
+                }
+            }
+
+        });
+    });
+</script>
+
+            <!--产品导航 e-->
+        </div>
+        <div class="right fr">
+            <div class="headline clearfix">
+                <div class="pro">公司产品</div>
+                <a href=""><i class=" fa fa-ellipsis-h"></i></a>
+            </div>
+            <ul class="clearfix">
+                <?php if(is_array($goodsList) || $goodsList instanceof \think\Collection || $goodsList instanceof \think\Paginator): if( count($goodsList)==0 ) : echo "" ;else: foreach($goodsList as $k=>$vo): ?>
+                <li>
+                    <a href="<?php echo U('product/detail',['goods_id'=>$vo['goods_id']]); ?>">
+                        <div class="img_box" ><img src="<?php echo $vo['original_img']; ?>"></div>
+                        <div class="tit"><?php echo $vo['goods_name']; ?></div>
+                    </a> 
+                </li>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="">-->
+                        <!--<div class="img_box" ><img src="/template/pc/yingdongli/static/imgs/product/p1.png"></div>-->
+                        <!--<div class="tit">500系列袖珍变频器 0.4-2KW</div>-->
+                    <!--</a> -->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--product-e-->
+<div class="img-box img-mobile wrap"><a href=""><img src="/template/pc/yingdongli/static/imgs/ad/ad3.jpg" style="width: 100%; height: 100%; min-height: 69px;"></a></div>
+<!--industry-s-->
+<div class=" industry" >
+    <div class="wrap" >
+        <div class="title"><i class="fa fa-industry"></i> 行业分类
+            <div class="small-cat">
+                <a href="">机床变频器</a>
+                <a href="">风机变频器 </a>
+                <a href="">其它变频器</a>
+                <a href="">包装制造变清器</a>
+                <!-- <a href="">变频器行业</a>
+                <a href="">变频器行业</a> -->
+            </div>
+            <a href="" class="more">更多 >></a>
+        </div>
+        <div class="headline clearfix">
+            <div class="pro">公司产品</div>
+            <a href=""><i class=" fa fa-ellipsis-h"></i></a>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                    <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                    <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+                </a>
+                <div class="more"><a href="">查看详情 >></a></div>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                    <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                    <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+                </a>
+                <div class="more"><a href="">查看详情 >></a></div>
+            </li><li>
+            <a href="">
+                <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="/template/pc/yingdongli/static/imgs/product/p4.png">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li>
+        </ul>
+    </div>
+</div>
+<!--industry-e-->
+<div class="img-box"><a href=""><img src="/template/pc/yingdongli/static/imgs/ad/ad4.jpg" style="width: 100%; height: 150px;"></a></div>
+<!--aboutus-s-->
+<div class="about-box wrap">
+    <div class="title">关于我们</div>
+    <img src="/template/pc/yingdongli/static/imgs/about/about.png">
+    <p class="intro">深圳市佛斯特科技有限公司于2005年成立，是国内有能力生产磁通矢量高端变频器的主力生产厂商，拥有自主知识产权，企业一直致力于变频器和相关电气传动系统的研发、生产、销售，经国家科技主管部门审批，荣获深圳市高新技术企业称号，并获国家创新基金资助。
+        公司拥有一批高素质变频器研发人员，在国外有多年的变频器研发经验，技术力量雄厚，同时与国内院校建立了广泛的合作关系，形成了强大的研发能力。
+        目前，主要产品有：FST-800磁通矢量变频器、FST-600通用控制变频器、FST-500袖珍经济技术力量雄厚，同时与国内院校建立了广泛的合作关系，形成了强大的研发能力。
+        目前，主要产品有：FST-800磁通矢量变频器、FST-600通用控制变频器、FST-500袖珍经济技术力量雄厚
+    </p>
+    <a href="" class="more pc">走进硬动力</a>
+    <a href="" class="more mobile">详细信息</a>
+</div>
+<!-- 分布图片 -->
+<div class="wrap map"><img src="/template/pc/yingdongli/static/imgs/ad/map5.jpg" alt="" ></div>
+<!-- 专题、维修 -->
+<div class="wrap topic" id="topic" >
+    <div class="passageway" >
+        <p class="triangle right-top" ><img src="/template/pc/yingdongli/static/imgs/common/triangle1.png"></p>
+        <ul class="topic-list" >
+           <li class="title"><i class="fa fa-table" style="font-size: 20px"></i><span>快速通道</span></li>
+           <div class="mb">
+               <div class="headline clearfix">
+                    <div class="pro">快速通道</div>
+                    <a href=""><i class=" fa fa-ellipsis-h"></i></a>
+               </div>
+           </div>
+          
+           <li class="list">
+                <ul class="box clearfix">
+                  <li class="fl">产品专题</li>
+                  <li class="fl">500系列、600系列、610系列、630系列、650S系列、650系列、700系列、900系列 800系列、650G系列、一体柜机</li>  
+                  <li class="fl more"><span class="btn">更多</span></li>  
+                </ul>
+                <ul class="box clearfix">
+                  <li class="fl">产品专题</li>  
+                  <li class="fl">煤矿业、纺织业、食品加工业</li>  
+                  <li class="fl more"><span class="btn">更多</span></li>  
+                </ul>
+                <ul class="box clearfix">
+                  <li class="fl">产品专题</li>  
+                  <li class="fl">珠三角专题、东北地区专题、长三角专题/li>  
+                  <li class="fl more"><span class="btn">更多</span></li>  
+                </ul>
+           </li>
+        </ul>
+        <p class="triangle right-bottom" ><img src="/template/pc/yingdongli/static/imgs/common/triangle1.png" style="width: 20px; height: 50px" alt=""></p>
+        <div class="map"><img src="/template/pc/yingdongli/static/imgs/ad/ad4.jpg" alt=""></div>
+    </div>
+
+    <div class="repair " >
+        <div class="title clearfix">
+            <p class="fl"><i class="fa fa-table" style="font-size: 20px"></i><span>维修/加盟/定制</span></p>
+            <p class="fr">更多</p>
+        </div>
+        <div class="mb">
+            <div class="headline clearfix">
+                <div class="pro">客户案例</div>
+                <a href=""><i class=" fa fa-ellipsis-h"></i></a>
+            </div>
+        </div>
+        
+        <ul class="list">
+            <li class="clearfix">
+                <a href="">
+                    <p class="fl img"><img src="/template/pc/yingdongli/static/imgs/product/thumb1.png" alt=""></p>
+                    <div class="fl content">
+                        <h2 class="titl">水泥行业对fst产品的需求</h2>
+                        <p class="info">我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲......</p>
+                        <span>[详细信息]</span>
+                    </div>
+                </a>
+            </li>
+           <li class="clearfix">
+                <a href="">
+                    <p class="fl img"><img src="/template/pc/yingdongli/static/imgs/product/thumb1.png" alt=""></p>
+                    <div class="fl content">
+                        <h2 class="titl">水泥行业对fst产品的需求</h2>
+                        <p class="info">我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲......</p>
+                        <span>[详细信息]</span>
+                    </div>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <p class="fl img"><img src="/template/pc/yingdongli/static/imgs/product/thumb1.png" alt=""></p>
+                    <div class="fl content">
+                        <h2 class="titl">水泥行业对fst产品的需求</h2>
+                        <p class="info">我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲......</p>
+                        <span>[详细信息]</span>
+                    </div>
+                </a>
+            </li>
+            <li class="clearfix">
+                <a href="">
+                    <p class="fl img"><img src="/template/pc/yingdongli/static/imgs/product/thumb1.png" alt=""></p>
+                    <div class="fl content">
+                        <h2 class="titl">水泥行业对fst产品的需求</h2>
+                        <p class="info">我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲我国低压变频器器市场在未来行业增长趋势十分强劲......</p>
+                        <span>[详细信息]</span>
+                    </div>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<!-- 新闻 -->
+<div class="wrap news clearfix" id="news">
+    <ul class="nav clearfix" id="news-nav">
+        <li class="fl active"><a href="#">公司新闻</a></li>
+        <li class="fl"><a href="#">行业新闻</a></li>
+        <li class="fl"><a href="#">产品百科</a></li>
+    </ul>
+    <?php if(is_array($newsList) || $newsList instanceof \think\Collection || $newsList instanceof \think\Paginator): if( count($newsList)==0 ) : echo "" ;else: foreach($newsList as $k=>$vo): ?>
+        <div class="box fl" >
+        <div class="top clearfix">
+            <p class='left'><i class="fa fa-table"></i><span><?php echo $vo['cat_name']; ?></span></p>
+            <p class="right"><a href="<?php echo U('home/news/newsList',['cat_id'=>$vo['cat_id']]); ?>">更多</a></p>
+        </div>
+        <div class="content">
+            <div class="detail clearfix">
+                <div class="fl img"><img src="<?php echo $vo['list'][0]['thumb']; ?>" alt=""></div>
+                <div class="fl" >
+                    <p class="title"><?php echo $vo['list'][0]['title']; ?></p>
+                    <p class="info"><a href="<?php echo U('home/news/detail',['article_id'=>$vo['list'][0]['article_id']]); ?>"><?php echo $vo['list'][0]['description']; ?></a></p>
+                    <a class="btn" href="<?php echo U('home/news/detail',['article_id'=>$vo['list'][0]['article_id']]); ?>">[详细信息]</a>
+                </div>
+            </div>
+            <div class="tab" >
+                <?php if(is_array($vo['list']) || $vo['list'] instanceof \think\Collection || $vo['list'] instanceof \think\Paginator): if( count($vo['list'])==0 ) : echo "" ;else: foreach($vo['list'] as $k1=>$vo1): ?>
+                <p>
+                    <span class="num"><?php echo $k1+1; ?></span>
+                    <a href="<?php echo U('home/news/detail',['article_id'=>$vo1['article_id']]); ?>"><span class="title"><?php echo $vo1['title']; ?></span><span class="btn">HOT</span><span class="date"> <?php echo date('Y-m-d', $vo1['publish_time']); ?></span></a>
+                </p>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <span class="more">查看更多</span>
+                
+            </div>
+        </div>
+        
+    </div>
+    <?php endforeach; endif; else: echo "" ;endif; ?>
+    <!--<div class="box fl" >-->
+        <!--<div class="top clearfix">-->
+            <!--<p class='left'><i class="fa fa-table"></i><span>行业新闻</span></p>-->
+            <!--<p class="right">更多</p>-->
+        <!--</div>-->
+        <!--<div class="content">-->
+            <!--<div class="detail clearfix">-->
+                <!--<div class="fl img" style="background: yellow"><img src="/template/pc/yingdongli/static/imgs/product/thumb1.png" alt=""></div>-->
+                <!--<div class="fl" >-->
+                    <!--<p class="title">行业新闻XXX公司领导莅临公司</p>-->
+                    <!--<p class="info"><a href="#">深圳市XXX领导莅临本司指导工作，这次会议主要深圳市XXX领导莅深圳市XXX领导莅临本司指导工作，这次会议主要深圳市XXX领导莅</a></p>-->
+                    <!--<a class="btn" href="">[详细信息]</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="tab" >-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!---->
+            <!--</div>-->
+        <!--</div>-->
+        <!---->
+    <!--</div>-->
+    <!--<div class="box fl" >-->
+        <!--<div class="top clearfix">-->
+            <!--<p class='left'><i class="fa fa-table"></i><span>产品百科</span></p>-->
+            <!--<p class="right">更多</p>-->
+        <!--</div>-->
+        <!--<div class="content">-->
+            <!--<div class="detail clearfix">-->
+                <!--<div class="fl img" style="background: yellow"><img src="/template/pc/yingdongli/static/imgs/product/thumb1.png" alt=""></div>-->
+                <!--<div class="fl" >-->
+                    <!--<p class="title">产品百科XXX公司领导莅临公司</p>-->
+                    <!--<p class="info"><a href="#">深圳市XXX领导莅临本司指导工作，这次会议主要深圳市XXX领导莅深圳市XXX领导莅临本司指导工作，这次会议主要深圳市XXX领导莅</a></p>-->
+                    <!--<a class="btn" href="">[详细信息]</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="tab" >-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<span class="num">1</span>-->
+                    <!--<a href=""><span class="title">结构紧凑、体积小、重量轻</span><span class="btn">HOT</span><span class="date"> 09-20</span></a>-->
+                <!--</p>-->
+                <!---->
+            <!--</div>-->
+        <!--</div>-->
+        <!---->
+    <!--</div>-->
+</div>
+<!-- news nav 导航切换 -->
+<script>
+    $(document).ready(function(){
+      $("#news-nav li").click(function(){
+        var n = $(this).index();
+        $("#news-nav li").removeClass('active');
+        $(this).addClass('active');
+        $(".news .box").css('display', 'none');
+        $(".news .box").eq(n).css('display', 'block');
+      });
+    });
+</script>
+<div class="bz_box bz-mobile clearfix" id="bz-mobile">
+    <div class="box-inc fl botm-box">
+        <img src="static/images/bz_inco_1.png" style="width: 49px ; height: 49px;" alt="">
+        <p>厂家直销</p>
+    </div>
+    <div class="box-inc fl botm-box">
+        <img src="static/images/bz_inco_1.png" style="width: 49px ; height: 49px;" alt="">
+        <p>正品保证</p>
+    </div>
+    <div class="box-inc fl botm-box">
+        <img src="static/images/bz_inco_1.png" style="width: 49px ; height: 49px;" alt="">
+        <p>快速发货</p>
+    </div>
+</div>
+<div class="foot-nav" id="foot-nav">
+    <ul class="wrap nav clearfix" >
+        <li >
+            <a href="">
+                <i class="fa fa-home active"></i>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-dashcube"></i>
+                <p>加盟定制</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-product-hunt"></i>
+                <p>产品中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-user"></i>
+                <p>关于我们</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-newspaper-o"></i>
+                <p>新闻中心</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<script>
+    $(document).ready(function(){
+        var oTop = $('#bz-mobile').offset().top;
+        var oNews = $('#news').offset().top;
+        console.log('oNews:' + oNews);
+        $(window).scroll(function(){
+            sTop = $(this).scrollTop() + 250;
+           console.log( 'sTop:'+sTop + '---' +oNews);
+            if(sTop <= oNews){
+            $("#foot-nav").css({"position":"fixed","bottom":"0"});
+            }else{
+            $("#foot-nav").css({"position":"static"});
+            }
+        });
+    });
+</script>
+<!-- 友情链接 -->
+<div class="link wrap" >
+    <span>友情链接 <span>|</span></span>
+    <span>
+        <a href="#">百度文库</a>
+        <a href="#"> 腾讯太热搜 </a>
+        <a href="#">佛斯特变频</a>
+        <a href="#">百度文库</a>
+        <a href="#"> 腾讯太热搜 </a>
+        <a href="#">佛斯特变频</a>
+        <a href="#">百度文库</a>
+        <a href="#"> 腾讯太热搜 </a>
+        <a href="#">佛斯特变频</a>
+    </span>
+</div>
+<!-- 底部 footer -->
+<!-- 底部 footer -->
+<div class="foot">
+    <div class="top wrap">
+        <div class="nav">
+            <a href="">首页</a>
+            <a href="">变频器</a>
+            <a href="">变频柜</a>
+            <a href="">产品服务中心</a>
+            <a href="">公司案例</a>
+            <a href="">购买收购指南</a>
+            <a href="">关于我们</a>
+            <a href="">网站指南</a>
+        </div>
+    </div>
+    <div class="mid wrap clearfix">
+        <div class="left">
+            <div class="logo">
+                <img src="/template/pc/yingdongli/static/imgs/logo/logo1.png" alt="">
+            </div>
+            <div class="qrcode">
+                <img src="/template/pc/yingdongli/static/imgs/logo/qrcode.png" alt="">
+                <img src="/template/pc/yingdongli/static/imgs/logo/qrcode.png" alt="">
+            </div>
+        </div>
+        <div class="middle">
+            <p>深圳市泰克天锐科技有限公司</p>
+            <p>公司地址：广东省深圳市龙岗区佛山街道128号C栋3楼</p>
+            <p>联系电话：0755-88889999</p>
+            <p>联系人：彭先生</p>
+        </div>
+        <div class="right">
+            <p>分公司：</p>
+            <p>
+                <a href="">沈阳分部</a>
+                <a href="">佛山分部</a>
+                <a href="">宁波分部 </a>
+                <a href="">苏州分部</a>
+                <a href="">东莞分部</a>
+                <a href="">越南分部</a>
+            </p>
+
+        </div>
+    </div>
+    <div class="bottom wrap">
+        Copyright © 2017 深圳市泰克天锐科技有限公司. All Rights Reserved      浙ICP备20170101号.
+    </div>
+</div>
+</body>

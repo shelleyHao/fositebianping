@@ -1,0 +1,39 @@
+<div class="top-box">
+    <div class="wrap">
+        <div class="welcome">欢迎来到硬动力官网！查看分站<i class="fa fa-angle-down"></i></div>
+        <div class="tel"><i class="fa fa-volume-control-phone"></i><span>0755-88889999</span></div>
+    </div>
+</div>
+<div class="header-box">
+    <div class="wrap">
+        <div class="logo">
+            <a href="{:U('Home/index/index')}">
+                <img src="{$tpshop_config.shop_info_store_logo|default='/public/static/images/logo/pc_home_logo_default.png'}"/>
+            </a>
+        </div>
+        <div class="slogn">中国变频器领先品牌<br>www.fositebianping.com</div>
+        <div class="search-box">
+            <div class="search-input">
+                <form id="searchForm" name="" method="get" action="{:U('Home/Goods/search')}" class="ecsc-search-form">
+                <input value="{$Request.param.q}" autocomplete="off" name="q" id="q" type="text" placeholder="输入关键字">
+                <button type="submit">搜索</button>
+                </form>
+            </div>
+            <div class="keyword" id="search_list">
+                <foreach name="tpshop_config.hot_keywords" item="wd" key="k">
+                    <a href="{:U('Home/Goods/search',array('q'=>$wd))}" target="_blank">{$wd}</a>
+                </foreach>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav-box">
+    <div class="wrap">
+        <span <if condition=" CONTROLLER_NAME eq 'Index' ">class="on"</if>><a href="{:U('Index/index')}">首页</a></span>
+        <tpshop sql="SELECT * FROM `__PREFIX__navigation` where is_show = 1 and position = 'top' ORDER BY `sort` DESC" key="k" item='v'>
+            <span <?php if($_SERVER['REQUEST_URI']==str_replace('&amp;','&',$v[url])){ echo "class='on'";}?>>
+            <a href="{$v[url]}" <if condition="$v[is_new] eq 1">target="_blank" </if> >{$v[name]}</a>
+            </span>
+        </tpshop>
+    </div>
+</div>

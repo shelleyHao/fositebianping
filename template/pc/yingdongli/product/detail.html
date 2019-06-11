@@ -1,0 +1,147 @@
+<include file="Public:header" />
+<!--header-e-->
+<div class="ad-img"><img src="__STATIC__/imgs/ad/ad4.jpg" alt="" style="width:100%"></div>
+<!-- 产品服务中心 -->
+<div class="wrap minwidth"  >
+    <div class="product clearfix">
+        
+        <!-- 右侧产品详情 -->
+        <div class="service fr">
+            <div class="nav"><i class="fa fa-home" style="margin-right: 5px"></i><a href="">硬动力</a> -> <a href=""></a>产品服务中心</-></div>
+            <div class="detail">
+                <div class="attr-box">
+                    <div class="attr" >
+                        <ul class="clearfix">
+                            <li class="fl">
+                                <div class="big-img"><img src="{$goodsList.original_img}" alt=""></div>
+                                <div class="small-img">
+                                    <foreach name="goodsImgs" item="vo" key="k" >
+                                    <img src="{$vo.image_url}" alt="">
+
+                                    </foreach>
+                                </div>
+                            </li>
+                            <li class="fr">
+                                <h3> {$goodsList.goods_name}</h3>
+                                <p class="intro">应用范围：{$goodsList.applied_range}.</p>
+                                <div class="attr-table" style="background-image: url('__STATIC__/imgs/common/bg.png')">
+                                    <div>
+                                    <foreach name="goodsAttrs" item="vo" key="k">
+                                        <span>{$vo.attr_name}：{$vo.attr_value}</span>
+                                    </foreach>
+                                    </div>
+                                    <div>
+                                        <span>产品系列：{$goodsList.series}系列</span>
+                                        <span>产品型号：{$goodsList.goods_mode}</span>
+                                    </div>
+                                        
+                                    <!--</tr>-->
+                                </div>
+                                <div class="price clearfix">
+                                    <p class="fl">交期：{$goodsList.product_cycle}</p>
+                                    <p class="fl">参考价格（含增值税）：￥ <i class="money">{$goodsList.min_price} - {$goodsList.max_price}</i></p>
+                                </div>
+                                <div class="call clearfix">
+                                    <span class="btn fl"><a href="#">0755-88889999</a></span>
+                                    <span class="btn fl"><a href="#">联系客服</a></span>
+
+                                </div>
+                                <p class="tip">提示：如果未找到您核实的产品，请联系客服，批量下单更优惠！</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav clearfix">
+                        <p class="pre fl"><a href="{:U('product/detail', ['goods_id' => $preGoods.goods_id])}"><i class="fa fa-angle-left" style=""></i>上一产品：{$preGoods.goods_name}</a></p>
+                        <p class="next fr"><a href="{:U('product/detail', ['goods_id' => $nextGoods.goods_id])}">下一产品：{$nextGoods.goods_name}<a href=""><i class="fa fa-angle-right" style=""></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="nav clearfix">
+                    <span  class="btn active fl">产品详情</span>
+                    <span  class="btn fl">使用手册</span>
+                </div>
+                <div class="box on">
+                <foreach name='goodsImgs' item='vo' key='k'>
+                    <img src="{$vo.image_url}" alt="">
+                </foreach>
+                <!-- <img src="imgs/product/p1.png" alt="">
+                <img src="imgs/product/p5.png" alt="">
+                <img src="imgs/product/p1.png" alt=""> -->
+                </div>
+                <div  class="box info">
+                    {$goodsList.goods_content}
+                </div>
+            </div>
+            
+        </div>
+        <!-- 左侧菜单 -->
+        <div class="left fl">
+<!---->
+            <!--产品导航 s-->
+            <include file="Public:product-box" />
+            <!--产品导航 e-->
+            <!-- 电话图片 -->
+            <img class="img" src="__STATIC__/imgs/common/num.png">
+            <!-- 推荐 start-->
+            <div class="product-box recommend">
+                <div class="title"><i class="fa fa-list-ul"></i><span>推荐产品</span></div>
+                <foreach name="recomGoodsList" item="vo" key="k">
+                <div class="prdct">
+                    <a href="{:U('product/detail', ['goods_id' => $vo.goods_id])}">
+                    <img src="{$vo.original_img}" alt="" style="width:232px; height: 182px;">
+                    <p>{$vo.goods_name}</p>
+                    </a>
+                </div>
+                </foreach>
+
+            </div>
+            <!-- 推荐-end -->
+            <!-- 相关文章 start-->
+            <div class="product-box recommend">
+                <div class="title"><i class="fa fa-list-ul"></i><span>相关文章</span></div>
+                <div class="article clearfix">
+                    <img src="__STATIC__/imgs/news/news1.png" alt="" class="fl">
+                    <div class="intro fl">
+                        <h3>我国低压变频器器市场在...</h3>
+                        <p class="content">作为国家高新技术企业，我司专注于电气传动...</p>
+                    </div>
+                </div>
+                <div class="article clearfix">
+                    <img src="__STATIC__/imgs/news/news1.png" alt="" class="fl">
+                    <div class="intro fl">
+                        <h3>我国低压变频器器市场在...</h3>
+                        <p class="content">作为国家高新技术企业，我司专注于电气传动...</p>
+                    </div>
+                </div>
+                <div class="article clearfix">
+                    <img src="__STATIC__/imgs/news/news1.png" alt="" class="fl">
+                    <div class="intro fl">
+                        <h3>我国低压变频器器市场在...</h3>
+                        <p class="content">作为国家高新技术企业，我司专注于电气传动...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 相关文章 end-->
+
+        </div>
+    </div>
+</div>
+<!-- 底部 footer -->
+<include file="Public:footer" />
+</body>
+
+<script>
+    oNav = $('.product .service .img-box .nav span');
+    oBox = $('.product .service .img-box .box ');
+    console.log(oNav);
+    oNav.click(function(){
+        console.log($(this).index());
+        var n = $(this).index();
+        oNav.removeClass('active');
+        oBox.removeClass('on');
+        $(this).addClass('active');
+        oBox.eq(n).addClass('on');
+    });
+
+</script>

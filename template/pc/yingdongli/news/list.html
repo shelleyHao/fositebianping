@@ -1,0 +1,93 @@
+<include file="Public:header" />
+<!--header-e-->
+
+<div class="wrap minwidth clearfix news-list">
+    
+    <div class="menu fl">
+        <div class="menu-box">
+            <h3 id="comm-title"><i class="fa fa-list-ul"></i><span>新闻中心</span></h3>
+            <ul class="link">
+                <foreach name="newsCatList" item="vo" key="k">
+                <li class="<if condition='$lab eq $k'>active</if>" > <a href="{:U('home/news/newsList', ['cat_id'=>$vo.cat_id, 'lab'=>$k])}"><i class="fa fa-caret-right"></i><span>{$vo.cat_name}</span></a></li>
+                </foreach>
+                <!--<li><a href=""><i class="fa fa-caret-right"></i><span>公司新闻</span></a></li>-->
+                <!--<li><a href=""><i class="fa fa-caret-right"></i><span>产品百科</span></a></li>-->
+            </ul>
+        </div>
+        <div class="img"><img src="__STATIC__/imgs/common/num.png" alt=""></div>
+        
+    </div>
+    <div class="content-box fr">
+        <div class="nav"><i class="fa fa-home" style="margin-right: 5px"></i><a href="">硬动力</a> -> <a href="">新闻列表</a></div>
+        <div class="list-box">
+            <div id="comm-title" class="title"><i class="fa fa-list-ul"></i><span>新闻中心</span></div>
+            <ul>
+                <foreach name="newsList" item="vo" key="k">
+                    <li class="clearfix">
+                        <a href="{:U('home/news/detail',['article_id'=>$vo.article_id])}">
+                        <img class="fl" src="{$vo.thumb}" alt="">
+                        <div class="fl info">
+                            <h3>{$vo.title}</h3>
+                            <p>{$vo.description}</p>
+                        </div>
+                        <div class="date fr">
+                        {$vo.publish_time|date="Y-m-d",###}
+                        </div>
+                        </a>
+                    </li>
+                </foreach>
+                <!--<li class="clearfix">-->
+                    <!--<img class="fl" src="imgs/news/news1.png" alt="">-->
+                    <!--<div class="fl info">-->
+                        <!--<h3>我国低压变频器器市场在未来行业增长趋势十分强劲</h3>-->
+                        <!--<p>作为国家高新技术企业，我司专注于电气传动、工业控制领域，是极少数成功研制矢量型变频器器并实现产业化的内资变频器器企业，具有自主的技术研发能力、完备的生产制造能力和遍布全国的营销网络</p>-->
+                    <!--</div>-->
+                    <!--<div class="date fr">-->
+                    <!--2019-09-10-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="clearfix">-->
+                    <!--<img class="fl" src="imgs/news/news1.png" alt="">-->
+                    <!--<div class="fl info">-->
+                        <!--<h3>我国低压变频器器市场在未来行业增长趋势十分强劲</h3>-->
+                        <!--<p>作为国家高新技术企业，我司专注于电气传动、工业控制领域，是极少数成功研制矢量型变频器器并实现产业化的内资变频器器企业，具有自主的技术研发能力、完备的生产制造能力和遍布全国的营销网络</p>-->
+                    <!--</div>-->
+                    <!--<div class="date fr">-->
+                    <!--2019-09-10-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="clearfix">-->
+                    <!--<img class="fl" src="imgs/news/news1.png" alt="">-->
+                    <!--<div class="fl info">-->
+                        <!--<h3>我国低压变频器器市场在未来行业增长趋势十分强劲</h3>-->
+                        <!--<p>作为国家高新技术企业，我司专注于电气传动、工业控制领域，是极少数成功研制矢量型变频器器并实现产业化的内资变频器器企业，具有自主的技术研发能力、完备的生产制造能力和遍布全国的营销网络</p>-->
+                    <!--</div>-->
+                    <!--<div class="date fr">-->
+                    <!--2019-09-10-->
+                    <!--</div>-->
+                <!--</li>-->
+
+            </ul>
+            <div class="page rel">
+                {$page}
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- 底部 footer -->
+<include file="Public:footer" />
+</body>
+
+<script>
+    $('.news-list .menu-box ul li:first-child').attr('class', 'active');
+    var oLi = $('.news-list .menu-box ul li')
+    oLi.click(function(){
+        var n = $(this).index();
+        oLi.removeClass('active');
+        $(this).addClass('active');
+        var cat_id = ($(this).attr('data_id');
+        
+    });
+</script>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页-{$tpshop_config['shop_info_store_title']}</title>
+    <meta name="keywords" content="{$tpshop_config['shop_info_store_keyword']}"/>
+    <meta name="description" content="{$tpshop_config['shop_info_store_desc']}"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/fontInco/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/public.css"/>
+    <script src="__STATIC__/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="__PUBLIC__/js/global.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{$tpshop_config.shop_info_store_ico|default='/public/static/images/logo/storeico_default.png'}" media="screen"/>
+</head>
+<body>
+<!--header-s-->
+<include file="public/header" w="w1224"/>
+<!--header-e-->
+<!--banner-s-->
+<div id="myCarousel" class="carousel clearfix">
+    <ul class="carousel-inner">
+        <adv pid="2" item="v1" limit="5">
+            <li class="item" style="background:{$v1.bgcolor};">
+                <a class="item-pic" href="{$v1[ad_link]}"
+                <if condition="$v1['target'] eq 1">target="_blank"</if>
+                >
+                <img class="w-100" src="{$v1[ad_code]}" title="{$v1[title]}" alt="{$v1[title]}"></a>
+            </li>
+        </adv>
+    </ul>
+    <div class="pagination">
+
+    </div>
+    <script>
+        $(function () {
+            function banner() {
+                var windowWidth = $(window).width();  //获取轮播图的宽度（这里是全屏）
+                window.onresize = function () {  //屏幕大小改变时 自适应
+                    windowWidth = $(window).width();
+                    $_banner.css({'width': windowWidth * (length + 2), left: -windowWidth});
+                    $_banner.find('.item').css('width', windowWidth);
+                };
+                var $_bannerWrap = $('#myCarousel');
+                var $_banner = $_bannerWrap.find('.carousel-inner');
+                var length = $_banner.find('.item').length;
+                var first = $_banner.find('.item').eq(0).clone();
+                var last = $_banner.find('.item:last').clone();
+                var timer; //定时器
+                $_banner.append(first);
+                $_banner.prepend(last);
+                //初始化 轮播图列表宽度和列表项宽度
+                $_banner.css({'width': windowWidth * (length + 2), left: -windowWidth});
+                $_banner.find('.item').css('width', windowWidth);
+
+                var $_pagination = $_bannerWrap.find('.pagination');
+                for (var i = 0; i < length; i++) {  //自动增加白色索引点击点
+                    $_pagination.append('<span class="pagination-item"></span>');
+                }
+                var iNow = 1; //索引记录标志
+                hoverActive(iNow); //初始化状态标记
+                $_bannerWrap.find('.left-btn').click(function () {
+                    clearInterval(timer);
+                    iNow--;
+                    bannerRun();
+                });
+                $_bannerWrap.find('.right-btn').click(function () {
+                    clearInterval(timer);
+                    iNow++;
+                    bannerRun();
+                });
+                $_pagination.find('.pagination-item').click(function () {
+                    iNow = $(this).index() + 1;
+                    $_banner.finish().animate({left: -iNow * windowWidth}, 500);
+                    hoverActive(iNow);
+                });
+
+                function bannerAutoRun() {  //轮播图自动循环播放 间隔4秒
+                    timer = setInterval(function () {
+                        iNow++;
+                        bannerRun();
+                    }, 4000)
+                }
+
+                bannerAutoRun();
+
+                //移动上面去停止，移动出来继续轮播
+                function hoverChangeRun(ele) {
+                    ele.hover(function () {
+                        clearInterval(timer);
+                    }, function () {
+                        bannerAutoRun();
+                    });
+                }
+
+                hoverChangeRun($_banner.find('.item-pic'));
+                hoverChangeRun($_pagination.find('.pagination-item'));
+                hoverChangeRun($_bannerWrap.find('.carousel-control'));
+
+                function hoverActive(index) { //切换时改变状态
+                    $_banner.find('.item').eq(index).addClass('slide-active').siblings().removeClass('slide-active');
+                    $_pagination.find('.pagination-item').eq(index - 1).addClass('active').siblings().removeClass('active');
+                }
+
+                function bannerRun() { //点击切换图片
+                    if (iNow > length) {
+                        $_banner.finish().animate({left: -iNow * windowWidth}, 300, function () {
+                            $_banner.css({left: -1 * windowWidth});
+                        });
+                        iNow = 1;
+                    } else if (iNow < 1) {
+                        $_banner.finish().animate({left: -iNow * windowWidth}, 500, function () {
+                            $_banner.css({left: -length * windowWidth});
+                        });
+                        iNow = length;
+                    } else {
+                        $_banner.finish().animate({left: -iNow * windowWidth}, 300);
+                    }
+                    hoverActive(iNow);
+                }
+            }
+
+            banner();
+        })
+    </script>
+    <a class="carousel-control left-btn t-all" href="javascript:;" data-slide="prev"></a>
+    <a class="carousel-control right-btn t-all" href="javascript:;" data-slide="next"></a>
+    
+    <div class="banner-right-box">
+        <adv item="vb" pid="52" limit="2">
+            <a class="banner-right-item t-all" href="{$vb[ad_link]}"><img src="{$vb[ad_code]}" alt="{$vb[title]}"/></a>
+        </adv>
+    </div>
+</div>
+<!--banner-e-->
+<!--bz-s-->
+<div class="bz_box">
+    <div class="wrap">
+        <div class="inco_box inco_1">厂家直销</div>
+        <div class="inco_box inco_2">正品保障</div>
+        <div class="inco_box inco_3">快速发货</div>
+    </div>
+</div>
+<!--bz-e-->
+<!--product-s-->
+<div class="wrap product">
+    <div class="left">
+
+        <div class="product-box">
+            <div class="title">产品导航</div>
+            <ul>
+                <li><i class="fa fa-caret-right"></i> 变频器</li>
+                <dt>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                    <dl><i class="fa fa-caret-right"></i>应用领域一</dl>
+                </dt>
+                <li><i class="fa fa-caret-right"></i> 变频器</li>
+                <li><i class="fa fa-caret-right"></i> 变频器</li>
+                <li><i class="fa fa-caret-right"></i> 变频器</li>
+            </ul>
+            <div class="more"><a href="">查看更多 > ></a> </div>
+        </div>
+
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+            <li><a href=""><img src=""><div class="tit">500系列袖珍变频器 0.4-2KW</div></a> </li>
+        </ul>
+    </div>
+</div>
+<!--product-e-->
+<!--industry-s-->
+<div class="industry">
+    <div class="wrap">
+        <div class="title"><i class="fa fa-steam-square"></i> 行业分类
+            <div class="small-cat">
+                <a href="">变频器行业</a>
+                <a href="">变频器行业</a>
+                <a href="">变频器行业</a>
+                <a href="">变频器行业</a>
+                <a href="">变频器行业</a>
+                <a href="">变频器行业</a>
+            </div>
+            <a href="" class="more">更多 >></a>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="">
+                    <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                    <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+                </a>
+                <div class="more"><a href="">查看详情 >></a></div>
+            </li>
+            <li>
+                <a href="">
+                    <img src="">
+                    <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                    <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+                </a>
+                <div class="more"><a href="">查看详情 >></a></div>
+            </li><li>
+            <a href="">
+                <img src="">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li><li>
+            <a href="">
+                <img src="">
+                <div class="tit">机床变频器 - 变频机机床变频器 - 变频机</div>
+                <div class="note">机床、磨床、铁床、钻床底下、数控、刨床、木工、拉丝机</div>
+            </a>
+            <div class="more"><a href="">查看详情 >></a></div>
+        </li>
+        </ul>
+    </div>
+</div>
+<!--industry-e-->
+<a href=""><img src="" style="width: 100%; height: 150px;"></a>
+<!--aboutus-s-->
+<div class="about-box wrap">
+    <div class="title">关于我们</div>
+    <img src="">
+    <div class="intro">深圳市佛斯特科技有限公司于2005年成立，是国内有能力生产磁通矢量高端变频器的主力生产厂商，拥有自主知识产权，企业一直致力于变频器和相关电气传动系统的研发、生产、销售，经国家科技主管部门审批，荣获深圳市高新技术企业称号，并获国家创新基金资助。
+        公司拥有一批高素质变频器研发人员，在国外有多年的变频器研发经验，技术力量雄厚，同时与国内院校建立了广泛的合作关系，形成了强大的研发能力。
+        目前，主要产品有：FST-800磁通矢量变频器、FST-600通用控制变频器、FST-500袖珍经济技术力量雄厚，同时与国内院校建立了广泛的合作关系，形成了强大的研发能力。
+        目前，主要产品有：FST-800磁通矢量变频器、FST-600通用控制变频器、FST-500袖珍经济技术力量雄厚</div>
+    <a href="" class="more">走进硬动力</a>
+</div>
+</body>

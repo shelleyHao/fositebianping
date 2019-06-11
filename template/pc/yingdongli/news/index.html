@@ -1,0 +1,86 @@
+<include file="Public:header" />
+
+<div class="news-box wrap minwidth clearfix">
+    <div class="content fl">
+        <div class="recommend clearfix">
+            <img class="fl" src="__STATIC__/imgs/news/intro.png" alt="">
+            <div class="fl rec">
+                <h3 id="comm-title"><i class="fa fa-list-ul"></i>推荐文章</h3>
+                <ul>
+                    <foreach name="recomArticles" item="vo" key="k">
+                    <li>{$vo.title}<span>【{$vo.publish_time|date='Y-m-d', ###}】</span></li>
+                    </foreach>
+                    <!--<li>我国低压变频器器市场在未来行业增长趋势十分强劲 <span>【2019-09-09】</span></li>-->
+                    <!--<li>我国低压变频器器市场在未来行业增长趋势十分强劲 <span>【2019-09-09】</span></li>-->
+                    <!--<li>我国低压变频器器市场在未来行业增长趋势十分强劲 <span>【2019-09-09】</span></li>-->
+                    <!--<li>我国低压变频器器市场在未来行业增长趋势十分强劲 <span>【2019-09-09】</span></li>               -->
+                </ul>
+            </div>
+        </div>
+        <div class="ad"><img src="__STATIC__/imgs/ad/ad6.png" alt=""></div>
+        <div class="topic-box">
+            <foreach name="newsList" item="vo" key="k">
+                <div class="box fl">
+                    <div class="clearfix ">
+                        <div id="comm-title" class="fl"><i class="fa fa-list-ul"></i>{$vo.cat_name}</div>
+                        <div class="fr more"><a href="{:U('home/news/newsList',['cat_id'=>$vo.cat_id])}">更多>></a></div>
+                    </div>
+                    <ul>
+                        <foreach name="$vo.list" item="vo1" key="k1">
+                            <li>{$vo1.title}</li>
+                        </foreach>
+                        <!--<li>我国低压变频器器市场在未来行业增长趋势我国低压变频器器市场在未来行业增长趋势....</li>-->
+
+                    </ul>
+                </div>
+            </foreach>
+
+        </div>
+        <div class="ad"> <img src="__STATIC__/imgs/ad/ad6.png" alt=""> </div>
+        <!-- <div class="ad  1"><img src="__STATIC__/imgs/ad/ad6.png" alt=""></div> -->
+    </div>
+    <div class="menu fr">
+        <div class="tag">
+            <div id="comm-title"><i class="fa fa-list-ul"></i><span>热门标签</span></div>
+            <div class="tags">
+                <span>君耀电子</span>
+                <span>电子</span>
+                <span>电子</span>
+                <span>美国约翰逊</span>
+                <span>电容</span>
+                <span>君耀电子</span>
+                <span>君耀电子</span>
+                <span>美国约翰逊</span>
+                <span>电子</span>
+                <span>君耀电子</span>
+                <span>君耀电</span>
+                <span>君耀电子</span>
+            </div>
+        </div>
+        <div class="reading tag">
+            <div id="comm-title"><i class="fa fa-list-ul"></i><span>热门阅读</span></div>
+            <ul>
+                <foreach name="hotArticles" item="vo" key="k">
+                <li class="clearfix">
+                    <a href="">
+                        <p class="fl">{$vo.title}</p>
+                        <span class="fr">{$vo.publish_time|date='Y-m-d', ###}</span>
+                    </a>
+                </li>
+                </foreach>
+                <!--<li class="clearfix">-->
+                    <!--<p class="fl">我国低压变频器器市场.....</p> -->
+                    <!--<span class="fr">05-22</span>-->
+                <!--</li>-->
+                <!--<li class="clearfix">-->
+                    <!--<p class="fl">我国低压变频器器市场.....</p> -->
+                    <!--<span class="fr">05-22</span>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 底部 footer -->
+<include file="Public:footer" />
+</body>

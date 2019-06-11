@@ -1,0 +1,14 @@
+.about-us {margin-top: 53px; margin-bottom: 37px;}
+.about-us .menu{  width: 271px; height: 317px;}
+.about-us .menu .menu-box{width: 271px; height: 260px; background: #fff;border-radius: 5px;}
+.about-us .comm-title {font-size: 18px; padding: 15px;  }
+.about-us .comm-title span{margin-left: 10px;}
+.about-us .menu .link{width: 243px; margin-left: 14px; border-top: 1px solid #e3e3e3;}
+.about-us .menu .link li{margin-left: 25px; font-size: 16px;}
+.about-us .menu .link li+li{margin-top: 30px;}
+.about-us .menu .link li span{margin-left: 10px;}
+.about-us .menu .ad-img{margin-top: 18px; width: 271px;height: 139px;}
+.about-us .menu .ad-img img{width: 271px;height: 139px;}
+.about-us .content{width: 910px; height: 703px;background: #fff; border-radius: 5px;}
+.about-us .content .intro{width: 871px; box-sizing: border-box; padding: 20px; margin-left: 18px; height: 100%; border-top: 1px solid #e3e3e3; font-size: 14px; line-height: 250%;}
+.about-us .content .intro img{width: 209px;height: 209px;float: left; margin-right: 5px;}

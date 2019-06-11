@@ -1,0 +1,117 @@
+<include file="Public:header" />
+<!--广告图-->
+<div class="ad-img"><img src="__STATIC__/imgs/ad/ad4.jpg" alt="" style="width:100%"></div>
+<!-- 产品型号表格 -->
+<div class="wrap product-tab">
+    <div class="tab">
+        <table>
+            <tr>
+                <td>应用范围</td>
+                <td><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span></td>
+                <td><a href="">更多 <i class="fa fa-angle-down"></i></a></td>
+            </tr>
+            <tr>
+                <td>应用范围</td>
+                <td><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span></td>
+                <td><a href="">更多 <i class="fa fa-angle-down"></i></a></td>
+            </tr>
+            <tr>
+                <td>应用范围</td>
+                <td><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span></td>
+                <td><a href="">更多 <i class="fa fa-angle-down"></i></a></td>
+            </tr>
+            <tr>
+                <td>应用范围</td>
+                <td><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span><span>数控机床应用</span></td>
+                <td><a href="">更多 <i class="fa fa-angle-down"></i></a></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<!-- 产品服务中心 -->
+<div class="wrap minwidth"  >
+    <div class="product clearfix">
+        <!-- 左边菜单  -->
+        <div class="left menu fl">
+            <!--产品导航 s-->
+            <include file="Public:product-box" />
+            <!--产品导航 e-->
+        </div>
+        <!-- 右边内容 -->
+        <div class="service fr content-box ">
+            <div class="nav"><i class="fa fa-home" style="margin-right: 5px"></i><a href="">硬动力</a> -> <a href="">产品服务中心</a>  </div>
+            <div class="product-list">
+                <div class="introduce">
+                    <img src="__STATIC__/imgs/product/intro.png" alt="" class="fl">
+                    <p class="fl">
+                        <h3>变频器原理</h3>
+                        <p class="content">不定期测量变频器及电机的运行数据。包括变频器输出频率，输出电流，输出电压，变频器内部直流电压，散热器温度等数据信息。与合理数据对照比较，以利于早日发现故障隐患。变频器要是发生故障跳闸，请务必记录故障代码和跳闸时变频器的运行工况，以便具体分析故障原因。我们建议两周进行一次，检查记录运行中的变频器输出三相电压，并注意比较它们之间的平衡度；检查记录变频器的三相输出电流，并注意比较它们之间的平衡度；检查激励环境温度</p>
+                    </p>
+                </div>
+                <div class="list" style="background: #fff;">
+                    <ul class="goodslist">
+                        <foreach name="goodsList" item="pro" key="k">
+                            <li class="clearfix">
+                                <img class="fl" src="{$pro.original_img}" alt="">
+                                <div class="fl attr-box">
+                                    <h3>{$pro.goods_name}</h3>
+                                    <div class="attr-info rel">
+                                        <div calss="attrs clearfix">
+                                            <!--<span>{$goodsAttrs[$pro.goods_id]}</span>-->
+                                            <foreach name="goodsAttrs" item="attr" key="k1">
+                                                <if condition="$pro.goods_id eq $k1">
+                                                    <foreach name="attr" item="vo" key="k2">
+                                                        <span>{$vo.attr_name}：{$vo.attr_value}</span>
+                                                    </foreach>
+                                                </if>
+                                            </foreach>
+                                        </div>
+                                        <div>
+                                            <span>产品系列：{$pro.series}系列</span>
+                                            <span>产品型号：{$pro.goods_mode}</span>
+                                        </div>
+                                        
+                                        <a href="{:U('product/detail', ['goods_id'=>$pro.goods_id])}" class="btn abslt">查看详情</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </foreach>
+
+                    </ul>
+                    <!-- 分页器 -->
+                    <div class="page rel">
+                        <!--<div class="abslt pos">-->
+                            <!--<a href=""><</a>-->
+                            <!--<a href="" class="active">1</a>-->
+                            <!--<a href="">2</a>-->
+                            <!-- <a href="">3</a> -->
+                            <!--<a href="">4</a>-->
+                            <!--<a href="">5</a>-->
+                            <!--<a href="">></a>-->
+                        <!--</div>-->
+                        {$page}
+                    </div>
+                </div>
+                
+            
+        </div>
+        
+    </div>
+    </div>
+</div>
+<!-- 底部 footer -->
+<include file="Public:footer" />
+</body>
+<script>
+    $(document).ready(function(){
+      var cat_id = $($('#product-box ul li:first-child').next().children().get(0)).attr('data-id');
+
+        $.get("./productList", {'cat_id':cat_id},function(data,status){
+            console.log(data);
+        });
+    });
+
+
+
+</script>

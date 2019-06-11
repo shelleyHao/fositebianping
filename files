@@ -1,0 +1,42 @@
+[25-May-2019 03:23:01 PRC] PHP Fatal error:  Call to undefined function think\imagecreate() in E:\testapache\TPshop_20190115\thinkphp\library\think\Verify.php on line 120
+[25-May-2019 03:27:26 PRC] PHP Fatal error:  Call to undefined function think\imagecreate() in E:\testapache\TPshop_20190115\thinkphp\library\think\Verify.php on line 120
+[25-May-2019 03:34:02 PRC] PHP Fatal error:  Call to undefined function think\imagecreate() in E:\testapache\TPshop_20190115\thinkphp\library\think\Verify.php on line 120
+[26-May-2019 11:54:35 PRC] PHP Fatal error:  Call to undefined function think\imagecreate() in F:\fositebianping\thinkphp\library\think\Verify.php on line 120
+[26-May-2019 11:56:31 PRC] PHP Fatal error:  Call to undefined function think\imagecreate() in F:\fositebianping\thinkphp\library\think\Verify.php on line 120
+[03-Jun-2019 17:32:03 PRC] PHP Parse error:  syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING) in F:\fositebianping\application\home\controller\Product.php on line 14
+[04-Jun-2019 14:49:33 PRC] PHP Fatal error:  Call to a member function delete() on null in F:\fositebianping\application\admin\controller\Goods.php on line 453
+[04-Jun-2019 21:20:41 PRC] PHP Fatal error:  Call to a member function data() on null in F:\fositebianping\application\admin\controller\Goods.php on line 371
+[05-Jun-2019 06:23:25 PRC] PHP Fatal error:  Class 'app\home\controller\GoodsLogic' not found in F:\fositebianping\application\home\controller\Product.php on line 15
+[05-Jun-2019 13:39:20 PRC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in F:\fositebianping\runtime\temp\0a07c700f8f2a748a21573e863959c12.php on line 125
+[05-Jun-2019 13:39:45 PRC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in F:\fositebianping\runtime\temp\0a07c700f8f2a748a21573e863959c12.php on line 125
+[05-Jun-2019 17:29:05 PRC] PHP Fatal error:  Call to a member function render() on null in F:\fositebianping\runtime\temp\0a07c700f8f2a748a21573e863959c12.php on line 243
+[05-Jun-2019 17:37:47 PRC] PHP Fatal error:  Call to a member function render() on null in F:\fositebianping\runtime\temp\0a07c700f8f2a748a21573e863959c12.php on line 243
+[06-Jun-2019 02:04:36 PRC] PHP Parse error:  syntax error, unexpected 'instanceof' (T_INSTANCEOF) in F:\fositebianping\runtime\temp\5994434e9cd88e5ecfdc12c06564f4b1.php on line 144
+[06-Jun-2019 12:01:06 PRC] PHP Fatal error:  Call to undefined function app\home\controller\dunp() in F:\fositebianping\application\home\controller\Product.php on line 55
+[06-Jun-2019 12:03:02 PRC] PHP Fatal error:  Call to a member function where() on array in F:\fositebianping\application\home\controller\Product.php on line 54
+[06-Jun-2019 12:03:42 PRC] PHP Fatal error:  Call to a member function where() on array in F:\fositebianping\application\home\controller\Product.php on line 55
+[06-Jun-2019 15:50:47 PRC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in F:\fositebianping\runtime\temp\0a07c700f8f2a748a21573e863959c12.php on line 175
+[06-Jun-2019 16:04:19 PRC] PHP Parse error:  syntax error, unexpected '<' in F:\fositebianping\runtime\temp\0a07c700f8f2a748a21573e863959c12.php on line 176
+[06-Jun-2019 20:29:08 PRC] PHP Fatal error:  Class 'app\home\controller\GoodsLogic' not found in F:\fositebianping\application\home\controller\Base.php on line 87
+[06-Jun-2019 20:50:09 PRC] PHP Fatal error:  Class 'Common' not found in F:\fositebianping\application\home\controller\Product.php on line 14
+[06-Jun-2019 20:50:28 PRC] PHP Fatal error:  Class 'Base' not found in F:\fositebianping\application\home\controller\Common.php on line 8
+[06-Jun-2019 20:51:03 PRC] PHP Fatal error:  Class 'Base' not found in F:\fositebianping\application\home\controller\Common.php on line 8
+[06-Jun-2019 20:53:03 PRC] PHP Fatal error:  Class 'Base' not found in F:\fositebianping\application\home\controller\Common.php on line 8
+[06-Jun-2019 20:54:01 PRC] PHP Fatal error:  Class 'Base' not found in F:\fositebianping\application\home\controller\Common.php on line 8
+[06-Jun-2019 20:54:05 PRC] PHP Fatal error:  Class 'Base' not found in F:\fositebianping\application\home\controller\Common.php on line 8
+[06-Jun-2019 20:54:29 PRC] PHP Fatal error:  Class 'Base' not found in F:\fositebianping\application\home\controller\Common.php on line 8
+[10-Jun-2019 10:39:11 PRC] PHP Parse error:  syntax error, unexpected ')' in F:\fositebianping\application\home\controller\Index.php on line 84
+[10-Jun-2019 10:40:12 PRC] PHP Fatal error:  Class 'app\home\controller\GoosLogic' not found in F:\fositebianping\application\home\controller\Index.php on line 82
+[10-Jun-2019 10:40:43 PRC] PHP Fatal error:  Class 'app\home\controller\GoodsLogic' not found in F:\fositebianping\application\home\controller\Index.php on line 82
+[10-Jun-2019 14:08:08 PRC] PHP Fatal error:  Class 'app\home\controller\ArticleCatLogic' not found in F:\fositebianping\application\home\controller\News.php on line 30
+[10-Jun-2019 14:08:42 PRC] PHP Fatal error:  Class 'app\home\controller\ArticleCatLogic' not found in F:\fositebianping\application\home\controller\News.php on line 31
+[10-Jun-2019 14:08:44 PRC] PHP Fatal error:  Class 'app\home\controller\ArticleCatLogic' not found in F:\fositebianping\application\home\controller\News.php on line 31
+[10-Jun-2019 14:08:58 PRC] PHP Fatal error:  Class 'app\home\controller\ArticleCatLogic' not found in F:\fositebianping\application\home\controller\News.php on line 31
+[10-Jun-2019 14:08:59 PRC] PHP Fatal error:  Class 'app\home\controller\ArticleCatLogic' not found in F:\fositebianping\application\home\controller\News.php on line 31
+[10-Jun-2019 15:45:15 PRC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in F:\fositebianping\application\home\controller\News.php on line 31
+[10-Jun-2019 15:52:09 PRC] PHP Fatal error:  Class 'app\home\controller\DB' not found in F:\fositebianping\application\home\controller\News.php on line 32
+[10-Jun-2019 16:54:04 PRC] PHP Parse error:  syntax error, unexpected '=', expecting ']' in F:\fositebianping\runtime\temp\fb61fb3a716e8aa05090e5e71d01a23c.php on line 90
+[10-Jun-2019 22:16:38 PRC] PHP Parse error:  syntax error, unexpected '?>' in F:\fositebianping\runtime\temp\6a810934152d77aa57141981c148751e.php on line 154
+[11-Jun-2019 01:31:18 PRC] PHP Parse error:  syntax error, unexpected 'instanceof' (T_INSTANCEOF) in F:\fositebianping\runtime\temp\6a810934152d77aa57141981c148751e.php on line 165
+[11-Jun-2019 01:32:08 PRC] PHP Parse error:  syntax error, unexpected 'instanceof' (T_INSTANCEOF) in F:\fositebianping\runtime\temp\6a810934152d77aa57141981c148751e.php on line 165
+[11-Jun-2019 04:11:25 PRC] PHP Fatal error:  Class 'app\home\controller\NewsCatLogic' not found in F:\fositebianping\application\home\controller\Index.php on line 84

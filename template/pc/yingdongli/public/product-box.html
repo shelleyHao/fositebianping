@@ -1,0 +1,61 @@
+<div class="product-box" id="product-box">
+    <div class="title">产品导航</div>
+    <ul>
+        <foreach name="cat_list" item="vo" key="k" >
+            <if condition='$vo.parent_id eq 0' >
+                <li><i class="fa fa-caret-right"></i> {$vo.name}</li>
+                <else/> <?php continue; ?>
+            </if>
+            <dt>
+                <foreach name="cat_list" item="vo1" key="k1">
+                    <if condition="$vo.id eq $vo1.parent_id" >
+                        <dl data-id="{$vo1.id}"><a href="{:U('home/Product/index', ['cat_id'=>$vo1.id])}" ><i class="fa fa-caret-right"></i>{$vo1.name}</a></dl>
+                        <else/> <?php continue; ?>
+                    </if>
+                </foreach>
+            </dt>
+        </foreach>
+
+    </ul>
+    <div class="more"><a href="">查看更多 > ></a> </div>
+</div>
+
+<script>
+    //产品导航的切换
+    $(function(){
+        // $('#product-box ul li:first-child i').attr('class', 'fa fa-caret-down');
+        // $('#product-box ul li:first-child').next().css({"display":"block" , "color":"blue"});
+        // $('#product-box ul li:first-child').next().children('dl').children('a').children('i').attr('class', 'fa fa-caret-down');
+        $('#product-box ul li').click(function(){
+            $('#product-box ul li i').attr('class', 'fa fa-caret-right');
+            $('#product-box ul li').next().css('display', 'none');
+            var n = $(this).index();
+            console.log(n);
+            console.log( $('#product-box ul li:nth-child(n) i'));
+            $(this).children('i').attr('class', 'fa fa-caret-down');
+            $(this).next().css({"display":"block" , "color":"blue"});
+            $(this).next().children('i').attr('class', 'fa fa-caret-down');
+        });
+    })
+</script>
+<script>
+    $(document).ready(function(){
+        var oBannerTop = $('#myCarousel').offset().top;
+        var h = $(window).scrollTop();
+        $(window).scroll(function(){
+            sTop = $(this).scrollTop();
+            sWithd = $(this).width();
+            // console.log('width'+sWithd);
+            // console.log(sTop);
+            // console.log(oBannerTop);
+            if(sWithd <= 420){
+                if(sTop >= oBannerTop){
+                    $("#header-box").css({"position":"fixed","top":"0"});
+                }else{
+                    $("#header-box").css({"position":"static"});
+                }
+            }
+
+        });
+    });
+</script>

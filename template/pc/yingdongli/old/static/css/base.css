@@ -1,0 +1,19 @@
+/*初始化元素*/
+html,body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,form,td,th{margin:0;padding:0;}
+body{background-color: #f0f0f0;color:#888888;}
+ul,ol{list-style:none;}
+em,i{font-style:normal;}
+a{text-decoration:none;color:inherit;}
+a:active,a:hover {outline:none;}
+input,button,textarea{outline:none;border:none;}
+textarea{resize:none;}
+img{vertical-align:top;}
+label { /*文字不能选中*/
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+/*网页主体宽度*/
+.wrap{width: 1200px; margin: 0 auto;}
